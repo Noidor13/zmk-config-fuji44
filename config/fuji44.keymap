@@ -132,10 +132,10 @@
 
         def {
             bindings = <
-&kp LALT   &kp TAB  &kp W          &kp E  &kp R      &kp T    &kp Y     &kp U  &kp I      &kp O        &kp P     &kp RBKT
-&kp LCTRL  &kp A    &kp S          &kp D  &kp F      &kp G    &kp H     &kp J  &kp K      &kp L        &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z    &kp X          &kp C  &kp V      &kp B    &kp N     &kp M  &kp COMMA  &kp DOT      &kp FSLH  &kp RSHFT
-                    &kp PAGE_DOWN  &mo 3  &kp SPACE  &mo 1    &kp BSPC  &mo 2  &kp ENTER  &kp PAGE_UP
+&kp LALT   &kp Q  &kp W          &kp E  &kp R      &kp T    &kp Y     &kp U  &kp I      &kp O        &kp P     &kp RBKT
+&kp LCTRL  &kp A  &kp S          &kp D  &kp F      &kp G    &kp H     &kp J  &kp K      &kp L        &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X          &kp C  &kp V      &kp B    &kp N     &kp M  &kp COMMA  &kp DOT      &kp FSLH  &kp RSHFT
+                  &kp PAGE_DOWN  &mo 3  &kp SPACE  &mo 1    &kp BSPC  &mo 2  &kp ENTER  &kp PAGE_UP
             >;
         };
 
