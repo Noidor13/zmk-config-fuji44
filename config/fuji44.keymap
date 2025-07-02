@@ -47,6 +47,19 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        mouse_key_press: mouse_key_press {
+            compatible = "zmk,behavior-mouse-key-press";
+            label = "MOUSE_KEY_PRESS";
+            #binding-cells = <1>;
+        };
+
+        sensor_rotate: sensor_rotate {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SENSOR_ROTATE";
+            #sensor-binding-cells = <0>;
+            bindings = <&none>, <&none>;
+        };
     };
 
     macros {
@@ -128,17 +141,17 @@
 
         nav {
             bindings = <
-&kp ESC   &kp LC(PAGE_DOWN)  &kp LC(LBKT)  &kp RET    &kp TAB          &kp BSPC     &msc SCRL_UP          &mkp LCLK             &mmv MOVE_UP    &mkp RCLK        &trans  &kp PG_UP
-&m14      &kp LG(M)          &m9           &kp LALT   &kp TAB          &kp DEL      &msc SCRL_DOWN        &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp PAGE_DOWN
-&kp CAPS  &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LC(B)    &kp LS(LC(NUMBER_6))  &kp LS(LC(NUMBER_4))  &m8             &m10             &m15    &trans
-                             &trans        &trans     &kp PRINTSCREEN  &trans       &trans                &trans                &trans          &trans
+&kp ESC   &kp LC(PAGE_DOWN)  &kp LC(LBKT)  &kp RET    &kp TAB          &kp BSPC     &msc SCRL_UP          &mouse_key_press LCLK  &mmv MOVE_UP    &mkp RCLK        &trans  &kp PG_UP
+&m14      &kp LG(M)          &m9           &kp LALT   &kp TAB          &kp DEL      &msc SCRL_DOWN        &mmv MOVE_LEFT         &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp PAGE_DOWN
+&kp CAPS  &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LC(B)    &kp LS(LC(NUMBER_6))  &kp LS(LC(NUMBER_4))   &m8             &m10             &m15    &trans
+                             &trans        &trans     &kp PRINTSCREEN  &trans       &trans                &trans                 &trans          &trans
             >;
         };
 
         sys {
             bindings = <
 &kp GRAVE  &kp LS(LC(UP))    &kp HOME          &kp UP    &kp END            &trans    &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0    &m7
-&m11       &kp LS(LC(DOWN))  &kp LEFT          &kp DOWN  &kp RIGHT          &kp A     &kp PLUS   &kp N4  &kp N5  &kp N6  &kp LBKT  &kp LA(G)
+&m11       &kp LS(LC(DOWN))  &kp LEFT          &kp DOWN  &kp RIGHT          &trans    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp LBKT  &kp LA(G)
 &trans     &trans            &kp LS(LC(LEFT))  &trans    &kp LS(LC(RIGHT))  &m4       &kp MINUS  &kp N1  &kp N2  &kp N3  &trans    &m9
                              &trans            &trans    &trans             &trans    &trans     &trans  &trans  &trans
             >;
