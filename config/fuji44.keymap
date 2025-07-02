@@ -141,10 +141,10 @@
 
         nav {
             bindings = <
-&kp ESC   &kp LC(PAGE_DOWN)  &kp LC(LBKT)  &kp RET    &kp TAB          &kp BSPC     &msc SCRL_UP          &mouse_key_press LCLK  &mmv MOVE_UP    &mkp RCLK        &trans  &kp PG_UP
-&m14      &kp LG(M)          &m9           &kp LALT   &kp TAB          &kp DEL      &msc SCRL_DOWN        &mmv MOVE_LEFT         &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp PAGE_DOWN
-&kp CAPS  &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LC(B)    &kp LS(LC(NUMBER_6))  &kp LS(LC(NUMBER_4))   &m8             &m10             &m15    &trans
-                             &trans        &trans     &kp PRINTSCREEN  &trans       &trans                &trans                 &trans          &trans
+&kp ESC   &kp LC(PAGE_DOWN)  &kp LC(LBKT)  &kp RET    &kp LC(RBKT)     &kp BSPC     &msc SCRL_UP          &mkp LCLK             &mmv MOVE_UP    &mkp RCLK        &trans  &kp PG_UP
+&m14      &kp LG(M)          &m9           &kp LALT   &kp TAB          &kp DEL      &msc SCRL_DOWN        &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp PAGE_DOWN
+&kp CAPS  &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LC(B)    &kp LS(LC(NUMBER_6))  &kp LS(LC(NUMBER_4))  &m8             &m10             &m15    &trans
+                             &trans        &trans     &kp PRINTSCREEN  &trans       &trans                &trans                &trans          &trans
             >;
         };
 
