@@ -108,7 +108,7 @@
         m14: m14 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LA(TAB) &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_CONTROL &kp LEFT_SHIFT &kp LC(F) &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_CONTROL &kp LEFT_SHIFT &kp LC(V)>;
+            bindings = <&kp LC(C) &kp LA(TAB) &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_CONTROL &kp LEFT_SHIFT &kp LC(F) &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_CONTROL &kp LEFT_SHIFT &kp LC(V)>;
             label = "M14";
         };
 
